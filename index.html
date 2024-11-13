@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Homepage GoodsPapi</title>
+
+    <!-- Import the favicon and CSS -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/index.css">
     <style>
+        /* Import the Lato font */
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-        </style>
+    </style>
 </head>
+
 <body>
-    <font-family: "Lato", sans-serif> 
+    <!-- Navbar -->
     <div class="navbar">
         <img src="/images/logo.png" alt="logo of website" class="logo">
+        <input type="text" id="search-bar" class="search-bar" placeholder="">
+        <div class="nav-items">
+            <select id="language" class="language-select">
+                <option value="en">EN</option>
+                <option value="gr">GR</option>
+            </select>
+            <div class="trackorder">
+                <a href="#" class="nav-link">Track Order</a>
+            </div>
+            <div class="cart">
+                <a href="#" class="nav-link">Cart</a>
+            </div>
+            <a href="#" id="register" class="nav-link">Register</a>
+            <a href="#" id="login" class="nav-link">Login</a>
+
+        </div>
     </div>
+
+    <script>
+        // Array of placeholder texts
+        const placeholders = [
+            "Search for the best deals...",
+            "Find your favorite items!",
+            "What are we looking for today?",
+            "Looking for something special?",
+            "Find your favorite items!",
+            "Let's find ourselves something nice?",
+            "Perhaps treat yourself something nice?",
+            "Start your search here...",
+            "What will we be buying today?",
+            "Looking for something special?"
+        ];
+
+        // Select a random placeholder
+        const randomPlaceholder = placeholders[Math.floor(Math.random() * placeholders.length)];
+
+        // Set the placeholder attribute of the search bar
+        document.getElementById('search-bar').setAttribute('placeholder', randomPlaceholder);
+    </script>
 </body>
+
 </html>

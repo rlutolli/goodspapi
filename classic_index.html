@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Homepage GoodsPapi</title>
+    <link rel="icon" type="image/x-icon" href="/images/classic_favicon.png">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            max-width: 80%;
+            height: auto;
+        }
+
+        .categories {
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .categories a { 
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+
+        .categories a:hover {
+            color: blue;
+        }
+
+        .search-bar {
+            width: 90%;
+            max-width: 500px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .auth-links {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .auth-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+        }
+
+        .auth-links a:hover {
+            color: blue;
+        }
+
+        .switch-mode {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: black;
+            background-color: #f0f0f0;
+        }
+
+        .switch-mode:hover {
+            color: blue;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .categories {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .categories a {
+                padding: 10px;
+                border-bottom: 1px solid #eee;
+                width: 100%;
+            }
+
+            .search-bar {
+                width: 95%;
+                font-size: 14px;
+            }
+
+            .auth-links {
+                font-size: 14px;
+            }
+
+            .switch-mode {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="/images/classic_logo.png" alt="Logo" class="logo">
+    <div class="categories">
+        <a href="#">Technology</a>
+        <a href="#">Fashion</a>
+        <a href="#">Sport</a>
+        <a href="#">Outdoor & Garden</a>
+    </div>
+    <input type="text" class="search-bar" placeholder="Search...">
+    <div class="auth-links">
+        <a href="#">Login</a> | <a href="#">Register</a>
+    </div>
+    <button class="switch-mode" onclick="window.location.href='index.html'">Switch to regular mode</button>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.navbar {
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 75px;
+    margin-right: 20px;
+}
+
+.navbar .search-bar {
+    width: 450px;
+    height: 20px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 20px;
+}
+
+.language-select {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.cart {
+    position: relative;
+    margin-right: 50px;
+}
+
+.trackorder{
+    /* margin-right: 20px; */
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
