@@ -13,6 +13,6 @@ GoodsPapi is an ecommerce platform designed for both customers and sellers. User
 - [x] Absolutely nothing at the moment
 
 ## Resources Used
-- [Logo Design] (https://flamingtext.com)
+- [Logo Design](https://flamingtext.com)
 - [Google Fonts - Lato](https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap)
 - [MDN Web Docs](https://developer.mozilla.org/)
